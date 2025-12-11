@@ -1,0 +1,23 @@
+# --- Environment ---
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# --- MLflow Tracking ---
+# This folder contains all tracking data, models, and artifacts. 
+# It can get very large.
+
+
+# --- Generated Data & Artifacts ---
+# These are intermediate files created by data_processor.py
+X_train.csv
+X_test.csv
+y_reg_train.csv
+y_reg_test.csv
+y_cls_train.csv
+y_cls_test.csv
+
+# The preprocessor pipeline and feature template
+preprocessor.pkl
+feature_template.json

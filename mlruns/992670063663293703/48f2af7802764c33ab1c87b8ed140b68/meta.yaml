@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/992670063663293703/48f2af7802764c33ab1c87b8ed140b68/artifacts
+end_time: 1765214239835
+entry_point_name: ''
+experiment_id: '992670063663293703'
+lifecycle_stage: active
+run_id: 48f2af7802764c33ab1c87b8ed140b68
+run_name: XGBoost_Price_Predictor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765214197535
+status: 3
+tags: []
+user_id: Administrator

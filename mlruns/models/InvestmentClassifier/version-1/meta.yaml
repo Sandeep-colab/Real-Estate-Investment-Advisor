@@ -1,0 +1,15 @@
+creation_timestamp: 1765214274221
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1765214274221
+model_id: m-d3bf64d2996348ee95bfad277f5e34c6
+name: InvestmentClassifier
+run_id: 66a8f168f6e14c49b1ca774c4f1faef5
+run_link: null
+source: models:/m-d3bf64d2996348ee95bfad277f5e34c6
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/860766645537092044/models/m-d3bf64d2996348ee95bfad277f5e34c6/artifacts
+user_id: null
+version: 1
