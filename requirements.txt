@@ -1,3 +1,6 @@
 pandas
 joblib
 mlflow
+scikit-learn
+xgboost
+streamlit

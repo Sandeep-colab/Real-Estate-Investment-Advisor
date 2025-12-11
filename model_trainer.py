@@ -7,6 +7,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
+from sklearn.exceptions import NotFittedError # Added for robustness, though not strictly needed here
 
 # --- Configuration ---
 REG_EXPERIMENT_NAME = "Real_Estate_Price_Forecast"
@@ -18,10 +19,11 @@ def load_assets():
     try:
         X_train = pd.read_csv('X_train.csv')
         X_test = pd.read_csv('X_test.csv')
-        y_reg_train = pd.read_csv('y_reg_train.csv')['Future_Price_5Y']
-        y_reg_test = pd.read_csv('y_reg_test.csv')['Future_Price_5Y']
-        y_cls_train = pd.read_csv('y_cls_train.csv')['Good_Investment']
-        y_cls_test = pd.read_csv('y_cls_test.csv')['Good_Investment']
+        # Use .iloc[:, 0] to get the Series from the single-column DataFrame
+        y_reg_train = pd.read_csv('y_reg_train.csv').iloc[:, 0]
+        y_reg_test = pd.read_csv('y_reg_test.csv').iloc[:, 0]
+        y_cls_train = pd.read_csv('y_cls_train.csv').iloc[:, 0]
+        y_cls_test = pd.read_csv('y_cls_test.csv').iloc[:, 0]
         preprocessor = joblib.load('preprocessor.pkl')
         
         print("Assets loaded successfully.")
@@ -93,7 +95,7 @@ def train_regression_model(X_train, X_test, y_train, y_test, preprocessor):
         # Evaluate and Log Metrics
         evaluate_regression(y_test, y_pred)
         
-        # Save and Register Model
+        # Save and Register Model (for local MLflow tracking)
         mlflow.sklearn.log_model(
             sk_model=reg_pipeline, 
             artifact_path="future_price_model", 
@@ -118,7 +120,7 @@ def train_classification_model(X_train, X_test, y_train, y_test, preprocessor):
             max_depth=5, 
             random_state=42,
             eval_metric='logloss',
-            use_label_encoder=False,
+            # use_label_encoder=False is generally required for newer versions
             n_jobs=-1
         )
         
@@ -141,7 +143,7 @@ def train_classification_model(X_train, X_test, y_train, y_test, preprocessor):
         # Evaluate and Log Metrics
         evaluate_classification(y_test, y_pred, y_prob)
         
-        # Save and Register Model
+        # Save and Register Model (for local MLflow tracking)
         mlflow.sklearn.log_model(
             sk_model=cls_pipeline, 
             artifact_path="investment_classifier_model", 
@@ -167,9 +169,16 @@ def main():
     # Train and log Classification Model
     cls_model = train_classification_model(X_train, X_test, y_cls_train, y_cls_test, preprocessor)
     
+    # --- FIX: Save final models using joblib for streamlined cloud deployment ---
+    print("\nSaving final model artifacts for deployment...")
+    joblib.dump(reg_model, 'final_reg_model.pkl')
+    joblib.dump(cls_model, 'final_cls_model.pkl')
+    print("Model artifacts saved: final_reg_model.pkl, final_cls_model.pkl")
+    # --- END FIX ---
+    
     print("\n--- Training Complete ---")
     print("To view MLflow UI, run 'mlflow ui' in your terminal and navigate to http://localhost:5000")
-    print("Next step: Run 'app.py' using Streamlit.")
+    print("Next step: Update 'app.py' to load these PKL files, update 'requirements.txt', commit, and push.")
 
 if __name__ == '__main__':
     # Fix for a warning related to data serialization
