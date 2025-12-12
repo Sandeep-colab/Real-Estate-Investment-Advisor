@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/992670063663293703/models/m-8a91c5c50a6141fbb674ce9c4b86b37e/artifacts
+creation_timestamp: 1765444088593
+experiment_id: '992670063663293703'
+last_updated_timestamp: 1765444102778
+model_id: m-8a91c5c50a6141fbb674ce9c4b86b37e
+model_type: null
+name: future_price_model
+source_run_id: 3406ae901be54b1e93d76b0e02321a6c
+status: 2
+status_message: null

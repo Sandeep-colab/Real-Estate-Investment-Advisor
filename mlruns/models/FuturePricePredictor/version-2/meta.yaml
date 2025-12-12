@@ -1,0 +1,15 @@
+creation_timestamp: 1765444102960
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1765444102960
+model_id: m-8a91c5c50a6141fbb674ce9c4b86b37e
+name: FuturePricePredictor
+run_id: 3406ae901be54b1e93d76b0e02321a6c
+run_link: null
+source: models:/m-8a91c5c50a6141fbb674ce9c4b86b37e
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/992670063663293703/models/m-8a91c5c50a6141fbb674ce9c4b86b37e/artifacts
+user_id: null
+version: 2
