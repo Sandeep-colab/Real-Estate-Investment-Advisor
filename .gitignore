@@ -11,7 +11,6 @@ __pycache__/
 
 # --- Generated Data & Artifacts ---
 # These are intermediate files created by data_processor.py
-X_train.csv
 X_test.csv
 y_reg_train.csv
 y_reg_test.csv
