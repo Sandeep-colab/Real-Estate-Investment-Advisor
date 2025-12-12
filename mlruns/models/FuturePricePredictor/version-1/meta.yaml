@@ -1,15 +1,15 @@
-creation_timestamp: 1765214239665
+creation_timestamp: 1765525322487
 current_stage: None
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1765214239665
-model_id: m-40a6e02ac8fa4f948ac14d8b10ad5340
+last_updated_timestamp: 1765525322487
+model_id: m-32b0f062f529472482b3ff460d9b5920
 name: FuturePricePredictor
-run_id: 48f2af7802764c33ab1c87b8ed140b68
+run_id: 1af0cc45cdea48399a5f536d0a7eb15b
 run_link: null
-source: models:/m-40a6e02ac8fa4f948ac14d8b10ad5340
+source: models:/m-32b0f062f529472482b3ff460d9b5920
 status: READY
 status_message: null
-storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/992670063663293703/models/m-40a6e02ac8fa4f948ac14d8b10ad5340/artifacts
+storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/802149223159373379/models/m-32b0f062f529472482b3ff460d9b5920/artifacts
 user_id: null
 version: 1

@@ -1,15 +1,15 @@
-creation_timestamp: 1765214274221
+creation_timestamp: 1765525363017
 current_stage: None
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1765214274221
-model_id: m-d3bf64d2996348ee95bfad277f5e34c6
+last_updated_timestamp: 1765525363017
+model_id: m-bed623c5b0e742acaecfad57be940e39
 name: InvestmentClassifier
-run_id: 66a8f168f6e14c49b1ca774c4f1faef5
+run_id: cd9a4f9810ea41adb8b59f3056090b9c
 run_link: null
-source: models:/m-d3bf64d2996348ee95bfad277f5e34c6
+source: models:/m-bed623c5b0e742acaecfad57be940e39
 status: READY
 status_message: null
-storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/860766645537092044/models/m-d3bf64d2996348ee95bfad277f5e34c6/artifacts
+storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/127294679527134513/models/m-bed623c5b0e742acaecfad57be940e39/artifacts
 user_id: null
 version: 1

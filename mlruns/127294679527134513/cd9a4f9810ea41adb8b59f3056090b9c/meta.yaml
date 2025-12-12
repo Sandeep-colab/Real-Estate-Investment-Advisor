@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/127294679527134513/cd9a4f9810ea41adb8b59f3056090b9c/artifacts
+end_time: 1765525363192
+entry_point_name: ''
+experiment_id: '127294679527134513'
+lifecycle_stage: active
+run_id: cd9a4f9810ea41adb8b59f3056090b9c
+run_name: XGBoost_Investment_Classifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765525322705
+status: 3
+tags: []
+user_id: Administrator

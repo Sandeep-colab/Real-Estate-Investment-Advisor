@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/127294679527134513/models/m-bed623c5b0e742acaecfad57be940e39/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.7.0
+model_id: m-bed623c5b0e742acaecfad57be940e39
+model_size_bytes: 286371
+model_uuid: m-bed623c5b0e742acaecfad57be940e39
+prompts: null
+run_id: cd9a4f9810ea41adb8b59f3056090b9c
+utc_time_created: '2025-12-12 07:42:36.056584'

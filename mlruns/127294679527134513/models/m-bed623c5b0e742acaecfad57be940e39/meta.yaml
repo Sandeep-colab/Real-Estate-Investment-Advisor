@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/127294679527134513/models/m-bed623c5b0e742acaecfad57be940e39/artifacts
+creation_timestamp: 1765525355640
+experiment_id: '127294679527134513'
+last_updated_timestamp: 1765525362921
+model_id: m-bed623c5b0e742acaecfad57be940e39
+model_type: null
+name: investment_classifier_model
+source_run_id: cd9a4f9810ea41adb8b59f3056090b9c
+status: 2
+status_message: null
