@@ -10,6 +10,6 @@ run_link: null
 source: models:/m-32b0f062f529472482b3ff460d9b5920
 status: READY
 status_message: null
-storage_location: file:///C:/Users/Administrator/Desktop/Real Estate Investment Advisor/mlruns/802149223159373379/models/m-32b0f062f529472482b3ff460d9b5920/artifacts
+storage_location: file:mlruns/802149223159373379/models/m-32b0f062f529472482b3ff460d9b5920/artifacts
 user_id: null
 version: 1
