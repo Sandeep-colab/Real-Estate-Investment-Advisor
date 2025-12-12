@@ -16,7 +16,3 @@ y_reg_train.csv
 y_reg_test.csv
 y_cls_train.csv
 y_cls_test.csv
-
-# The preprocessor pipeline and feature template
-preprocessor.pkl
-feature_template.json
